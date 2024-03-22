@@ -9,6 +9,8 @@
     tabs.forEach(tab => {
         tab.addEventListener('click', function() {
             removeActive(tabPanels); // Pass tabPanels to the removeActive function
+        // learned this from https://stackoverflow.com/questions/25931155/how-to-get-attribute-of-href-on-the-basis-of-selected-text
+            this.parentNode.classList.add('active');
             const tabId = this.getAttribute('href').substring(1);
             const tabPanel = document.getElementById(tabId);
             tabPanel.classList.add('active');
