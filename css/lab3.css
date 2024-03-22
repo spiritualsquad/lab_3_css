@@ -1,9 +1,14 @@
+
+
+
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* Box-sizing reset (https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/) */
 html {
 	box-sizing: border-box;
+	background-image: linear-gradient(to right, blue, red);
+
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -15,17 +20,34 @@ html {
 #container {
 	width: 80%;
 	margin: 0 auto;
+	background-color: rgba(238, 185, 62, 0.534);
+	backdrop-filter: blur(50px);
+	margin-top: 4cm;
+	border-radius: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 2cm;
 }
+
 .tabs {
-	border: 1px solid #ccc;
-	padding: 10px;
+	border: 1px solid  rgb(141, 239, 151);
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 6.5px;
 	margin-bottom: 20px;
+	background-color: rgb(141, 239, 151);
+	border-radius: 15px;
+	
+
   }
   
   .tabs ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
+	background-color: rgba(141, 239, 151, 0.736);
   }
   
   .tabs ul li {
@@ -36,14 +58,24 @@ html {
   .tabs ul li a {
 	text-decoration: none;
 	padding: 5px 10px;
-	background-color: #f2f2f2;
-	color: #333;
-	border: 1px solid #ccc;
+	background-color: #59c878;
+	border: 1px solid #000000;
 	border-radius: 5px 5px 0 0;
+	background-image: linear-gradient(to right, rgba(55, 228, 118, 0.825), rgb(207, 200, 66));
+	transition: ease-in-out all 0.5s;
+	
   }
   
   .tabs ul li a:hover {
-	background-color: #e0e0e0;
+	color: rgb(251, 251, 251);
+	background-image: linear-gradient(to right, rgba(226, 51, 104, 0.825), rgb(197, 74, 185));
+	
+  }
+
+  .tabs ul li a:active {
+	color: rgb(251, 251, 251);
+	background-image: linear-gradient(to right, rgba(226, 51, 104, 0.464), rgba(197, 74, 185, 0.629));
+	
   }
   
   .tabs div[role="tabpanel"] {
@@ -53,6 +85,15 @@ html {
   
   .tabs div[role="tabpanel"].active {
 	display: block;
-	border-top: 1px solid #ccc;
+	border-top: 1px solid #000000;
+	margin-top: 6px;
   }
-  
+  h1{
+	color: rgb(255, 255, 255);
+	text-align: center;
+  }
+
+small{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 15px;
+}
